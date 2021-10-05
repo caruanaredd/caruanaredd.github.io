@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+// Box-Sizing for better scaling.
+*, *::before, *::after { box-sizing: border-box; }
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// Bootstrap Grid
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/bootstrap-utilities";
+
+// reveal.js styling.
+@import "revealjs/scss/template/mixins";
+@import "revealjs/scss/template/settings";
+
+$accent: #579dcf;
+$accentShade: #3d6e91;
+$accentTint: #ddebf5;
+$gray: #696969;
+
+$backgroundColor: #f7f7f7;
+
+$blockMargin: .75em;
+
+$codeFont: 'Anonymous Pro', monospace;
+
+$headingFont: 'Jost', Impact, sans-serif;
+$headingColor: $accent;
+$headingLineHeight: 1.5;
+$headingMargin: 0 0 $blockMargin 0;
+$headingFontWeight: 600;
+
+$heading1Size: 2.5em;
+$heading2Size: 1.75em;
+$heading3Size: 1.5em;
+$heading4Size: 1.25em;
+
+$linkColor: $accent;
+$linkColorHover: $accentShade;
+
+$mainColor: $gray;
+$mainFont: 'Montserrat', Verdana, sans-serif;
+$mainFontSize: 24px;
+
+$selectionBackgroundColor: $accentShade;
+$selectionColor: $backgroundColor;
+
+.reveal section {
+    height: 100%;
+
+    .slide-content { height: 100%; }
+}
+
+@import "custom/slides";
+@import "custom/elements";
+
+// reveal.js theme.
+@import "revealjs/scss/template/theme";

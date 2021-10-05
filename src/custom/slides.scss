@@ -1,0 +1,92 @@
+.reveal {
+    counter-reset: sections;
+
+    .slide-content {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &.center {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.reveal section {
+    // Cover Slide.
+    &.cover-slide {
+        .section-title, .section-detail { height: 50%; }
+        .section-title { background-color: $accentTint; }
+
+        .lecture-number, .unit-title { color: $gray }
+    }
+
+    // Code Slide
+    &.code-slide {
+        --code-font-size: 1.5em;
+
+        pre {
+            margin: 0;
+            width: auto;
+        }
+
+        code {
+            font-size: var(--code-font-size);
+            height: auto;
+            line-height: 1.5;
+            max-height: 75vh;
+        }
+    }
+
+    &.screenshot-slides {
+        .screenshot {
+            --height: 1080;
+            --width: 1920;
+        }
+
+        .floating-item {
+            --width: 100;
+            --height: 100;
+
+            --pos-x: 0;
+            --pos-y: 0;
+
+            --scale: 1;
+            --scaled-height: 0;
+            --scaled-width: 0;
+            --scaled-pos-x: 0;
+            --scaled-pos-y: 0;
+
+            position: absolute;
+            left: calc(var(--scaled-pos-x) * 1px);
+            height: calc(var(--scaled-height) * var(--scale) * 1px);
+            margin: 0;
+            top: calc(var(--scaled-pos-y) * 1px);
+            width: calc(var(--scaled-width) * var(--scale) * 1px);
+
+            &.shadow { filter: drop-shadow(0 0 5px rgba(0, 0, 0, .5)); }
+        }
+    }
+
+    // Title Slide
+    &.title-slide {
+        .section-detail {
+            height: 75%;
+        }
+        
+        .section-title {
+            background-color: $accentTint;
+            height: 20%;
+
+            .section-number {
+                color: $gray;
+                &::before {
+                    content: 'Section ' counter(sections);
+                    display: block;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
