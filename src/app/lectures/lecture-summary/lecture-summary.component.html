@@ -1,0 +1,28 @@
+<redd-navbar class="position-absolute w-100 mt-md-3"></redd-navbar>
+<redd-header type="narrow" title="Lectures" tagline="html Presentations"></redd-header>
+
+<section class="py-5" *ngIf="lecture !== undefined">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h2 fw-bold">{{ lecture.title }}</h2>
+                <p class="lead">{{ lecture.synopsis }}</p>
+            </div>
+
+            <div class="col-12">
+                <redd-references *ngIf="lecture.references" [references]="lecture.references"></redd-references>
+            </div>
+
+            <div class="mt-5">
+                <div class="col-12 text-center">
+                    <a routerLink="view" class="d-block text-decoration-none">
+                        <fa-icon [icon]="faPlay" class="d-block"></fa-icon>
+                        Start Presentation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<redd-footer></redd-footer>

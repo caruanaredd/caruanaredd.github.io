@@ -1,0 +1,44 @@
+---
+  title: This is a sample tutorial.
+  slug: sample-tutorial
+  date:
+    year: 2021
+    month: 10
+    day: 8
+  synopsis: Hemlo this is such a tutorial lmao
+  references:
+    - Leslie Lamport (1994) \em{The TEX Book}, Addison-Wesley Professional, 2nd ed.
+    - bye.css
+  content: |
+    \image{/assets/images/console.png}{Caption}{w-100}
+    \link{http://google.com}
+    \\
+    \link{http://google.com}{Google}
+    \par{\strong{Oh!} This should work? \em{Cool!}}
+    \link{http://google.com}{\image{/assets/images/console.png}{Caption}{w-100}}{text-decoration-none}
+
+    \subheader{Unordered List}
+    \ulist{
+      \item{One}
+      \item{Two}
+      \item{Three}
+    }
+
+    \subheader{Ordered List}
+    \olist{
+      \item{One}
+      \item{Two}
+      \item{Three}
+    }
+
+    \code{
+    using System;
+
+    public class Program
+    {
+      public static void Main()
+      {
+        Console.WriteLine("Hello World");
+      }
+    }
+    }{csharp}

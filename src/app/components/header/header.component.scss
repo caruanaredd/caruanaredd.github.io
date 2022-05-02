@@ -1,0 +1,18 @@
+.cover {
+    height: calc(100vh - 300px);
+    min-height: 536px;
+
+    &.narrow {
+        height: 300px;
+        min-height: auto;
+    }
+}
+
+.header {
+    background-color: var(--accent-tint);
+    color: var(--accent);
+}
+
+.lead {
+    color: var(--gray);
+}

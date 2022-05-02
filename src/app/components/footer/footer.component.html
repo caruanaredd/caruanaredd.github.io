@@ -1,0 +1,17 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="mx-3" *ngFor="let item of footer">
+                        <a [href]="item.url" target="_blank">
+                            <fa-icon [icon]="item.icon"></fa-icon>
+                        </a>
+                    </li>
+                </ul>
+
+                &copy; {{ year }}, <span class="accent">redd</span> caruana.
+            </div>
+        </div>
+    </div>
+</footer>

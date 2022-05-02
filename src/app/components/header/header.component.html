@@ -1,0 +1,10 @@
+<header class="header p-3">
+    <div class="container cover d-flex flex-column justify-content-center" [ngClass]="{ 'narrow': type == 'narrow' }">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <h1 class="h1 fw-bold text-lowercase text-center">{{ title }}</h1>
+                <p class="lead mt-3 text-center text-lowercase" [innerHTML]="tagline"></p>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,23 @@
+<redd-navbar class="position-absolute w-100 mt-md-3"></redd-navbar>
+<redd-header type="narrow" title="Tutorials" tagline="Tutorials"></redd-header>
+
+<section class="pb-5">
+    <div class="container">
+        <div class="mt-5" *ngFor="let category of tutorials | keyvalue">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="h2 fw-bold mb-3">{{ category.key }}</h2>
+                </div>
+    
+                <div class="mb-4 col-12 col-md-6 col-lg-4" *ngFor="let tutorial of category.value">
+                    <a [routerLink]="['/tutorials/view', tutorial.slug]" class="text-decoration-none d-block">
+                        <h4 class="h6 fw-bold d-block mt-2 accent">{{ tutorial.title }}</h4>
+                        <p class="synopsis mt-1 mb-1 text-dark">{{ tutorial.synopsis }}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<redd-footer></redd-footer>

@@ -1,0 +1,5 @@
+<div class="reveal" *ngIf="lecture">
+    <div class="slides">
+        <section *ngFor="let slide of lecture.slides" [innerHTML]="slide.content"></section>
+    </div>
+</div>

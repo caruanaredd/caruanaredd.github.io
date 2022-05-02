@@ -3,8 +3,7 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
 // Bootstrap Grid
 @import "~bootstrap/scss/bootstrap-grid";
@@ -13,6 +12,27 @@
 // reveal.js styling.
 @import "revealjs/scss/template/mixins";
 @import "revealjs/scss/template/settings";
+
+:root {
+    --accent: #579dcf;
+    --accent-rgb: 87, 157, 207;
+    --accent-shade: #3d6e91;
+    --accent-shade-rgb: 61, 110, 145;
+    --accent-tint: #ddebf5;
+    --accent-tint-rgb: 221, 235, 245;
+    --black: #000000;
+    --black-rgb: 0, 0, 0;
+    --gray: #696969;
+    --gray-rgb: 105, 105, 105;
+    --white: #ffffff;
+    --white-rgb: 255, 255, 255;
+    --off-white: #f7f7f7;
+
+    --gutter-x: 2rem;
+
+    --font: 'Jost', Verdana, sans-serif; 
+    --header-font: 'Montserrat', Verdana, sans-serif;
+}
 
 $accent: #579dcf;
 $accentShade: #3d6e91;
@@ -57,3 +77,32 @@ $selectionColor: $backgroundColor;
 
 // reveal.js theme.
 @import "revealjs/scss/template/theme";
+
+body {
+    background-color: var(--off-white);
+    font-family: var(--font);
+}
+
+em { font-style: italic; }
+
+figure { margin: 1rem 0 0; }
+
+h1, h2, h3, h4, h5, h6 { font-family: var(--font); font-weight: 700; }
+
+.accent { color: var(--accent); }
+
+.hljs-ln .hljs-ln-n {
+    color: var(--gray);
+    padding: 0 1.25em 0 .25em !important;
+    text-align: right;
+}
+
+.thumbnail {
+    display: block;
+
+    .thumbnail-inner {
+        background-color: black;
+        display: block;
+        padding-bottom: 100%;
+    }
+}

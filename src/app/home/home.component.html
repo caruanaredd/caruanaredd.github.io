@@ -1,0 +1,56 @@
+<redd-navbar class="position-absolute w-100 mt-md-3"></redd-navbar>
+<redd-header type="narrow" title="Hello!" tagline="Welcome to my repository of lecturing material"></redd-header>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="lead">Generic Description</p>
+            </div>
+        </div>
+
+        <!-- Lectures -->
+        <div class="mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="h2 fw-bold mb-3">Lectures</h2>
+                </div>
+                <div class="mb-4 col-12 col-md-6 col-lg-4" *ngFor="let i of [1, 2, 3, 4, 5, 6]">
+                    <a href="#" class="text-decoration-none d-block">
+                        <h4 class="h6 fw-bold d-block mt-2 accent">Sample Title</h4>
+                        <p class="mt-1 mb-1 text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, debitis.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <a routerLink="/lectures" class="d-block text-decoration-none text-end accent my-1 py-3">More &raquo;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tutorials -->
+        <div class="mt-4">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="h2 fw-bold mb-3">Tutorials</h2>
+                </div>
+                <div class="mb-4 col-12 col-md-6 col-lg-4" *ngFor="let i of [1, 2, 3, 4, 5, 6]">
+                    <a href="#" class="text-decoration-none d-block">
+                        <h4 class="h6 fw-bold d-block mt-2 accent">Sample Title</h4>
+                        <p class="mt-1 mb-1 text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, debitis.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <a routerLink="/tutorials" class="d-block text-decoration-none text-end accent my-1 py-3">More &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<redd-footer></redd-footer>

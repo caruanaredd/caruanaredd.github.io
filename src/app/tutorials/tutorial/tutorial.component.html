@@ -1,0 +1,23 @@
+<redd-navbar class="position-absolute w-100 mt-md-3"></redd-navbar>
+<redd-header type="narrow" title="Tutorials" tagline="tutorials"></redd-header>
+
+<section class="py-5" *ngIf="tutorial !== undefined">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h2 fw-bold">{{ tutorial.title }}</h2>
+                <time dateTime="{{ date | date: 'yyyy-MM-dd' }}" class="d-block text-muted">{{ updated ? 'Originally written' : 'Written' }} on {{ date | date: 'longDate' }}</time>
+                <time *ngIf="tutorial.updated" dateTime="{{ updated | date: 'yyyy-MM-dd' }}" class="d-block text-muted">Updated on {{ updated | date: 'longDate' }}</time>
+            </div>
+            
+            <div class="mt-3">
+                <div class="col-12" [innerHTML]="tutorial.content"></div>
+            </div>
+            <div class="col-12">
+                <redd-references *ngIf="tutorial.references" [references]="tutorial.references"></redd-references>
+            </div>
+        </div>
+    </div>
+</section>
+
+<redd-footer></redd-footer>

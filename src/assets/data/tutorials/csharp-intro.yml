@@ -1,0 +1,45 @@
+---
+  title: Introduction to C#
+  slug: csharp-intro
+  category:
+    - Unity
+    - C#
+  date:
+    year: 2021
+    month: 10
+    day: 8
+  synopsis: This article covers the fundamental concepts of .NET and C#.
+  references:
+    - "Chand, M. (2019) \\em{ Why Learn C# }. Available at: \\link{https://www.c-sharpcorner.com/article/why-learn-c-sharp/} (Accessed 10 October 2021)."
+    - "Gallagher, J. (2020) \\em{ How to Learn C# }. Available at: \\link{https://careerkarma.com/blog/how-to-learn-c-sharp/} (Accessed 10 October 2021)."
+    - "Microsoft (2021) \\em{ A tour of the C# language }. Available at: \\link{https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/} (Accessed 11 October 2021)."
+  content: |
+    \par{ This article is meant to serve as an introduction to C#. }
+
+    \subheader{ What is .NET? }
+    \par{
+      \strong{ Network Enabled Technology }
+      \\
+      Capable of translating various programming languages (C#, F#, VB.NET) into functional applications.
+    }
+    \par{
+      \strong{ Shared Libraries }
+      \\
+      Developers are not required to write the foundational code from scratch every time they start a new project.
+      \\
+      Packed with tens of thousands of utility functions that will speed up production.
+    }
+    \par{
+      \strong{ Free, Cross-Platform, Open-Source }
+      \\
+      Any developer can actively contribute to the framework and help it grow.
+    }
+
+    \code{
+    string name = "Redd";
+    int tiredness = 9001;
+    bool awesome = true;
+
+    Weapon sword = new Weapon("Sword");
+    sword.Slice();
+    }{csharp}

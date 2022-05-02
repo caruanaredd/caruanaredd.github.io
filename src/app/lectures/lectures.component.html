@@ -1,0 +1,38 @@
+<redd-navbar class="position-absolute w-100 mt-md-3"></redd-navbar>
+<redd-header type="narrow" title="Lectures" tagline="html Presentations"></redd-header>
+
+<section class="pb-5">
+    <div class="container">
+        <div class="mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="h2 fw-bold mb-3">Category</h2>
+                </div>
+    
+                <div class="mb-4 col-12 col-md-6 col-lg-4" *ngFor="let i of [1, 2, 3, 4, 5, 6]">
+                    <a [routerLink]="['/lectures', i]" class="text-decoration-none d-block">
+                        <h4 class="h6 fw-bold d-block mt-2 accent">Sample Title</h4>
+                        <p class="mt-1 mb-1 text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, debitis.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="h2 fw-bold mb-3">Category</h2>
+                </div>
+    
+                <div class="mb-4 col-12 col-md-6 col-lg-4" *ngFor="let i of [1, 2, 3, 4, 5, 6]">
+                    <a [routerLink]="['/lectures', i]" class="text-decoration-none d-block">
+                        <h4 class="h6 fw-bold d-block mt-2 accent">Sample Title</h4>
+                        <p class="mt-1 mb-1 text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, debitis.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<redd-footer></redd-footer>

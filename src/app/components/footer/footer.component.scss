@@ -1,0 +1,14 @@
+.footer {
+    background-color: var(--accent-tint);
+    padding: 5rem 0;
+
+    fa-icon {
+        color: var(--accent);
+        line-height: 1;
+        vertical-align: middle;
+
+        &:hover {
+            color: var(--accent-shade);
+        }
+    }
+}

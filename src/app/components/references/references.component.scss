@@ -1,0 +1,13 @@
+.reference-list {
+    counter-reset: references;
+
+    li {
+        counter-increment: references;
+
+        &::before {
+            content: '[' counter(references) '] ';
+            font-size: .8em;
+            vertical-align: super;
+        }
+    }
+}

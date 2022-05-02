@@ -13,7 +13,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="/revealjs/dist/reset.css">
   <link rel="stylesheet" href="/revealjs/dist/reveal.css">
-  <link rel="stylesheet" href="/revealjs/plugin/highlight/monokai.css" id="theme">
+  <link rel="stylesheet" href="/revealjs/plugin/highlight/atom-one-dark.min.css" id="theme">
 
   <title>Redd Caruana</title>
 </head>
@@ -25,5 +25,18 @@
   <script src="/revealjs/plugin/search/search.js"></script>
   <script src="/revealjs/plugin/markdown/markdown.js"></script>
   <script src="/revealjs/plugin/highlight/highlight.js"></script>
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+
+  <script>
+    (function() {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+
+      if (redirect && redirect != location.href)
+        history.replaceState(null, null, redirect);
+    })();
+  </script>
 </body>
 </html>

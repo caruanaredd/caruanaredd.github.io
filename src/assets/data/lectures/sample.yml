@@ -1,0 +1,309 @@
+---
+  title: This is a sample lecture
+  slug: sample-lecture
+  date:
+    year: 2021
+    month: 10
+    day: 10
+  synopsis: What the fuck is this all about lmao
+  references:
+    - None
+  slides:
+    - content: >
+        <!-- Cover Slide -->
+        <div class="cover-slide slide-content">
+            <div class="section-title p-1 d-flex flex-column justify-content-end">
+                <h4 class="lecture-number mb-0">Lecture 1</h4>
+                <h1 class="lecture-name">Introduction</h1>
+            </div>
+            <div class="section-detail p-1">
+                <h3 class="unit-title">Game Engines 1</h3>
+            </div>
+        </div>
+      notes: null
+
+    - content: >
+        <!-- Title Slide -->
+        <div class="title-slide slide-content">
+          <div class="section-title p-1 d-flex flex-column justify-content-end">
+            <h1 class="heading m-0">Contents</h1>
+          </div>
+          <div class="section-detail p-5">
+            <ol class="number-list">
+              <li class="item">
+                <div class="item-bullet">
+                  <h2 class="number"></h2>
+                </div>
+                <div class="item-content">
+                  <strong class="m-0">The Unit</strong>
+                  <p class="mt-0 fst-italic">What will we be doing?</p>
+                </div>
+              </li>
+              
+              <li class="item">
+                <div class="item-bullet">
+                  <h2 class="number"></h2>
+                </div>
+                <div class="item-content">
+                  <strong class="m-0">Software and Tools</strong>
+                  <p class="mt-0 fst-italic">What will we be working with?</p>
+                </div>
+              </li>
+              
+              <li class="item">
+                <div class="item-bullet">
+                  <h2 class="number"></h2>
+                </div>
+                <div class="item-content">
+                  <strong class="m-0">Topic Introduction</strong>
+                  <p class="mt-0 fst-italic">Some theory and basic practice.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      notes: null
+
+    - content: >
+        <!-- Assignment Brief -->
+        <div class="slide-content p-5">
+          <h1>The Unit</h1>
+          
+          <p class="mb-5">Throughout this semester, you will learn:</p>
+          
+          <ul class="bullet-list w-75">
+            
+            <!-- Point 1 -->
+            <li class="item">
+              <div class="item-bullet me-4">
+                <fa-icon [icon]="faAngleRight"></fa-icon>
+              </div>
+              <div class="item-content">
+                <strong class="m-0">How to code using C#.</strong>
+                <p class="mt-2 fst-italic">Get stressed out when it doesn't work, and ecstatic when it does.</p>
+              </div>
+            </li>
+            
+            <!-- Point 2 -->
+            <li class="item">
+              <div class="item-bullet me-4">
+                <fa-icon [icon]="faAngleRight"></fa-icon>
+              </div>
+              <div class="item-content">
+                <strong class="m-0">Produce the paperwork!</strong>
+                <p class="mt-2 fst-italic">All games require some form of documentation.</p>
+              </div>
+            </li>
+            
+            <!-- Point 3 -->
+            <li class="item">
+              <div class="item-bullet me-4">
+                <fa-icon [icon]="faAngleRight"></fa-icon>
+              </div>
+              <div class="item-content">
+                <strong class="m-0">Using Unity to build games.</strong>
+                <p class="mt-2 fst-italic">Companies will appreciate that you know how to do this.</p>
+              </div>
+            </li>
+          </ul>
+          
+          <p class="mt-5">This assignment requires you to walk through the process of game development for <strong>two microgames</strong>.</p>
+        </div>
+      notes: null
+
+    - content:
+        <!-- Software and Tools -->
+        <div class="slide-content p-5">
+          <h1>Software and Tools</h1>
+          
+          <p class="mb-5">For this unit you will need:</p>
+          
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-4">
+                <a href="https://unity3d.com/get-unity/download" target="_blank">
+                  <figure>
+                    <img src="/assets/images/lesson-1/software/unity.png" alt="Unity" class="d-block">
+                    <figcaption>Unity 2020.3 (LTS)</figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="col-4">
+                <a href="https://code.visualstudio.com/" target="_blank">
+                  <figure>
+                    <img src="/assets/images/lesson-1/software/vs-code.png" alt="Unity" class="d-block">
+                    <figcaption>Visual Studio Code</figcaption>
+                  </figure>
+                </a>
+                <a href="https://code.visualstudio.com/docs/other/unity" target="_blank" class="d-block mt-3">
+                  Unity Development with VS Code
+                </a>
+              </div>
+              <div class="col-4">
+                <a href="https://desktop.github.com/" target="_blank">
+                  <figure>
+                    <img src="/assets/images/lesson-1/software/github.png" alt="Unity" class="d-block">
+                    <figcaption>GitHub Desktop</figcaption>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      notes: null
+
+    - content: >
+        <!-- .NET Title -->
+        <div class="slide-content center">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6 offset-3">
+                <figure>
+                  <img src="/assets/images/lesson-1/theory/dotnet.png" alt="C#" class="d-block mx-auto">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      notes: null
+
+    - content: >
+        <!-- What is .NET? -->
+        <div class="slide-content p-5">
+          <h1>What is .NET?</h1>
+          
+          <div class="container-fluid mt-35">
+            <div class="row">
+              <div class="col-12 col-lg-8 offset-lg-2">
+                <ul class="bullet-list w-100">
+                  
+                  <!-- Point 1 -->
+                  <li class="item">
+                    <div class="item-bullet me-4">
+                      <fa-icon [icon]="faAngleRight"></fa-icon>
+                    </div>
+                    <div class="item-content">
+                      <strong class="m-0">Network Enabled Technology</strong>
+                      <p class="mt-2 fst-italic">
+                        Capable of translating various programming languages (C#, F#, VB.NET)
+                        <br>
+                        into functional applications.
+                      </p>
+                    </div>
+                  </li>
+                  
+                  <!-- Point 2 -->
+                  <li class="item">
+                    <div class="item-bullet me-4">
+                      <fa-icon [icon]="faAngleRight"></fa-icon>
+                    </div>
+                    <div class="item-content">
+                      <strong class="m-0">Shared Libraries</strong>
+                      <p class="mt-2 fst-italic">
+                        Developers are not required to write the foundational code from scratch
+                        <br>
+                        every time they start a new project.
+                      </p>
+                      
+                      <p class="mt-3 fst-italic">
+                        Packed with tens of thousands of utility functions that will speed up production.
+                      </p>
+                    </div>
+                  </li>
+                  
+                  <!-- Point 3 -->
+                  <li class="item">
+                    <div class="item-bullet me-4">
+                      <fa-icon [icon]="faAngleRight"></fa-icon>
+                    </div>
+                    <div class="item-content">
+                      <strong class="m-0">Free, Cross-Platform, Open-Source</strong>
+                      <p class="mt-2 fst-italic">
+                        Any developer can actively contribute to the framework and help it grow.
+                      </p>
+                    </div>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      notes: null
+
+    - content: >
+        <!-- C# Title -->
+        <div class="slide-content center">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6 offset-3">
+                <figure>
+                  <img src="/assets/images/lesson-1/theory/c-sharp.png" alt="C#" class="d-block mx-auto">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      notes: null
+
+    - content: >
+        <!-- What is C#? -->
+        <div class="slide-content code-slide p-5" style="--code-font-size: 3em">
+          <h1>What is C#?</h1>
+          
+          <p class="mb-5">A general-purpose type-safe programming language created by Microsoft.</p>
+          
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-lg-8 offset-lg-2">
+                <ul class="bullet-list w-100">
+                  
+                  <!-- Point 1 -->
+                  <li class="item">
+                    <div class="item-bullet me-4">
+                      <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="item-content">
+                      <strong class="m-0">Common Language Runtime</strong>
+                      <p class="mt-2 fst-italic">
+                        Projects can be simplistic in structure, or consist of numerous
+                        <br>classes containing various relevant functions.
+                      </p>
+                    </div>
+                  </li>
+                  
+                  <!-- Point 2 -->
+                  <li class="item">
+                    <div class="item-bullet me-4">
+                      <fa-icon [icon]="faAngleRight"></fa-icon>
+                    </div>
+                    <div class="item-content">
+                      <strong class="m-0">Heavily integrated with the .NET Framework</strong>
+                      <p class="mt-2 fst-italic">
+                        We don't need to do any heavy lifting to get our projects to work!
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                      <pre data-id="code-animation">
+                        <code class="hljs language-csharp" data-trim data-line-numbers="|1-3|5-6|">
+                          string name = "Redd";
+                          int tiredness = 9001;
+                          bool hasPS5 = true;
+                          
+                          Weapon sword = new Weapon("Sword");
+                          sword.Slice();
+                        </code>
+                      </pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      notes: null
